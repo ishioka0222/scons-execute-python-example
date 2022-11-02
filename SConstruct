@@ -1,5 +1,5 @@
 import os
-env = Environment(ENV=os.environ.copy())
+env = Environment(ENV={'PATH': os.environ['PATH']})
 
 env.Command(
     target="output.txt",
